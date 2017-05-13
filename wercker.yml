@@ -13,3 +13,10 @@ build:
         name: Run Maven build
         code: |
           mvn clean install
+deploy:
+  steps:
+    - internal/docker-push:
+        username: $USERNAME
+        password: $PASSWORD
+        repository: abhirockzz/worked-up
+        registry: https://registry.hub.docker.com
