@@ -20,3 +20,5 @@ push-to-hub:
         password: $PASSWORD
         repository: abhirockzz/worked-up
         registry: https://registry.hub.docker.com
+        ports: "8080"
+        cmd: java -jar redis-cdi.jar
