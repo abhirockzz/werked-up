@@ -21,4 +21,4 @@ push-to-hub:
         repository: abhirockzz/worked-up
         registry: https://registry.hub.docker.com
         ports: "8080"
-        cmd: java -jar redis-cdi.jar
+        cmd: java -jar /pipeline/source/target/redis-cdi.jar
