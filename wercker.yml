@@ -9,11 +9,12 @@ box: maven
 build:
   # The steps that will be executed on build
   steps:
-    - mvn clean install
-    
     # A custom script step, name value is used in the UI
     # and the code value contains the command that get executed
     - script:
         name: echo Maven version
         code: |
           echo "Maven version $(mvn version) running"
+        name: Run Maven build
+        code: |
+          mvn clean install
