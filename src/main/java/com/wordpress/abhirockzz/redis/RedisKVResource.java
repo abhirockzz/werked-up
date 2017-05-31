@@ -17,9 +17,9 @@ public class RedisKVResource {
     @GET
     @Path("{key}")
     public String get(@PathParam("key") String key){
-        System.out.println("Getting value for key "+ key);
+        System.out.println("Getting value for key - "+ key);
         String value = jedis.get(key);
-        System.out.println("Value ---- "+ value);
+        System.out.println("Value ***** "+ value);
         return value;
     }
     
